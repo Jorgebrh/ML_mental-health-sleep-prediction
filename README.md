@@ -29,12 +29,12 @@ The solution follows a complete supervised learning workflow:
 
 1. **Exploratory Data Analysis (EDA)**:
    - Distribution plots and outlier detection
-   - Correlation analysis (Spearman)
-   - Kruskal-Wallis test for group comparisons
-
-2. **Preprocessing**:
    - Handling missing values
    - Encoding categorical variables
+
+2. **Preprocessing**:
+   - Correlation analysis (Spearman)
+   - Kruskal-Wallis test for group comparisons
    - Feature scaling (when required)
 
 3. **Model Training and Evaluation**:
@@ -95,13 +95,14 @@ El dataset contiene tanto **variables numéricas como categóricas** y represent
 La solución adoptada sigue un flujo completo de aprendizaje supervisado:
 
 1. **Análisis Exploratorio de Datos (EDA)**:
-   - Gráficas de distribución y detección de outliers  
-   - Análisis de correlación (Spearman)  
-   - Test de Kruskal-Wallis para comparación de grupos
+   - Gráficas de distribución y detección de outliers
+   - Tratamiento de valores faltantes  
+   - Codificación de variables categóricas   
+
 
 2. **Preprocesamiento**:
-   - Tratamiento de valores faltantes  
-   - Codificación de variables categóricas  
+   - Análisis de correlación (Spearman)  
+   - Test de Kruskal-Wallis para comparación de grupos
    - Escalado de características (cuando es necesario)
 
 3. **Entrenamiento y Evaluación del Modelo**:
