@@ -23,7 +23,7 @@ def pinta_distribucion_categoricas(df, columnas_categoricas, relativa=False, mos
             sns.barplot(x=serie.index, y=serie, ax=ax, palette='viridis', hue = serie.index, legend = False)
             ax.set_ylabel('Frecuencia')
 
-        ax.set_title(f'Distribución de {col}')
+        ax.set_title(f'{col} Distribution')
         ax.set_xlabel('')
         ax.tick_params(axis='x', rotation=45)
 
@@ -174,16 +174,16 @@ def plot_combined_graphs(df, columns, whisker_width=1.5, bins = None):
                 # Histograma y KDE
                 sns.histplot(df[column], kde=True, ax=axes[i,0] if num_cols > 1 else axes[0], bins= "auto" if not bins else bins)
                 if num_cols > 1:
-                    axes[i,0].set_title(f'Histograma y KDE de {column}')
+                    axes[i,0].set_title(f'Histogram and KDE of {column}')
                 else:
-                    axes[0].set_title(f'Histograma y KDE de {column}')
+                    axes[0].set_title(f'Histogram and KDE of {column}')
 
                 # Boxplot
                 sns.boxplot(x=df[column], ax=axes[i,1] if num_cols > 1 else axes[1], whis=whisker_width)
                 if num_cols > 1:
-                    axes[i,1].set_title(f'Boxplot de {column}')
+                    axes[i,1].set_title(f'Boxplot of {column}')
                 else:
-                    axes[1].set_title(f'Boxplot de {column}')
+                    axes[1].set_title(f'Boxplot of {column}')
 
         plt.tight_layout()
         plt.show()
@@ -242,9 +242,9 @@ def grafico_dispersion_con_correlacion(df, columna_x, columna_y, tamano_puntos=5
 
     if mostrar_correlacion:
         correlacion = df[[columna_x, columna_y]].corr().iloc[0, 1]
-        plt.title(f'Diagrama de Dispersión con Correlación: {correlacion:.2f}')
+        plt.title(f'Scatter Plot with correlation: {correlacion:.2f}')
     else:
-        plt.title('Diagrama de Dispersión')
+        plt.title('Scatter Plot')
 
     plt.xlabel(columna_x)
     plt.ylabel(columna_y)
