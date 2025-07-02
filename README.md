@@ -55,8 +55,9 @@ The solution follows a complete supervised learning workflow:
 
 - `notebooks/`: Jupyter notebooks with EDA, modeling, and evaluation.
 - `models/`: Saved models (e.g., Random Forest).
-- `figures/`: Plots and graphs used in the analysis.
+- `img/`: Plots and graphs used in the analysis.
 - `README.md`: Project overview and documentation.
+- `utils/`: all the auxiliar functions used
 
 
 ##  License
@@ -90,7 +91,7 @@ El dataset utilizado en este proyecto es público y se encuentra disponible como
 
 El dataset contiene tanto **variables numéricas como categóricas** y representa una mezcla de individuos sanos y con estrés de diversas profesiones.
 
-## 🛠 Enfoque de la Solución
+##  Enfoque de la Solución
 
 La solución adoptada sigue un flujo completo de aprendizaje supervisado:
 
@@ -123,8 +124,9 @@ La solución adoptada sigue un flujo completo de aprendizaje supervisado:
 
 - `notebooks/`: Notebooks de Jupyter con el EDA, modelado y evaluación.  
 - `models/`: Modelos guardados (por ejemplo, Random Forest).  
-- `figures/`: Gráficas y visualizaciones utilizadas en el análisis.  
+- `img`: Gráficas y visualizaciones utilizadas en el análisis.  
 - `README.md`: Documentación general del proyecto.
+- `utils/`: todas las funciones auxiliares utilizadas
 
 ##  Licencia
 
